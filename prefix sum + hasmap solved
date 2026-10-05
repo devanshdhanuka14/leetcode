@@ -1,0 +1,11 @@
+Prefix Sum + HashMap progression
+You've gone through:
+- 560 → prefix sum + frequency
+- 525 → prefix sum + earliest index
+- 974 → remainder + frequency
+- 1248 → transform odd/even → 560 pattern
+- 523 → remainder + earliest index
+- 1590 → remainder + latest index
+The big thing I want you to take away isn't the individual LeetCode numbers.
+It's:
+When I see Prefix Sum + HashMap, first figure out WHAT information about previous prefixes I need to store.
