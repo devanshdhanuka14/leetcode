@@ -4,3 +4,8 @@ class Solution {
         return nums[nums.length - k];
     }
 }
+
+
+
+
+////// HAVE TO DO THIS AGAIN WITH THE QUICKSLECT METHOD
