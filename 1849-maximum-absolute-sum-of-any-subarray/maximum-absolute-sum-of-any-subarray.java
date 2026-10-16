@@ -13,13 +13,8 @@ class Solution {
 
         }
 
-        if(min<0){
-            min = -1 * min;
-            if(min>max){
-                return min;
-            }
-        }
-        
+        max = Math.max(max,Math.abs(min));
+
         return max;
     }
 }
