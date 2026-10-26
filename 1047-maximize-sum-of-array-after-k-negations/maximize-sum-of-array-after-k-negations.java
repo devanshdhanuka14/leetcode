@@ -11,8 +11,13 @@ class Solution {
         }
 
         if(k%2!=0){
-            Arrays.sort(nums);
-            nums[0] = -nums[0];
+            int min = 0;
+            for(int i = 0; i<nums.length; i++){
+                if(nums[i]<nums[min]){
+                    min = i;
+                }
+            }
+            nums[min] = -nums[min];
         }
         
         for(int i = 0; i<nums.length; i++){
