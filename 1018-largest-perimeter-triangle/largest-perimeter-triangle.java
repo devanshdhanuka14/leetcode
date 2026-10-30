@@ -10,9 +10,9 @@ class Solution {
                 tri = true;
             }
             if(tri){
-                max = Math.max(max, nums[i]+nums[i-1]+nums[i-2]);
+                return (nums[i]+nums[i-1]+nums[i-2]);
             }
         }
-        return max;
+        return 0;
     }
 }
