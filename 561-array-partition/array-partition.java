@@ -5,7 +5,7 @@ class Solution {
         int sum = 0;
 
         for(int i = 0; i<n-1; i=i+2){
-            sum += Math.min(nums[i],nums[i+1]);
+            sum += nums[i];
         }
         return sum;
     }
