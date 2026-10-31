@@ -10,12 +10,8 @@ class Solution {
         }
 
         while(pq.size()>1){
-            int k = pq.size();
             y = pq.poll();
             x = pq.poll();
-            if(k==2 && x==y){
-                return 0;
-            }
             if(x==y){
                 continue;
             }
@@ -23,6 +19,11 @@ class Solution {
                 pq.add(y-x);
             }
         }
+
+        if(pq.isEmpty()){
+            return 0;
+        }
+    
         return pq.peek();
     }
 }
