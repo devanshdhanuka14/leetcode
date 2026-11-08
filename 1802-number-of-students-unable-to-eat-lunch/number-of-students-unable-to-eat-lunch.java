@@ -1,31 +1,18 @@
 class Solution {
     public int countStudents(int[] students, int[] sandwiches) {
-        Queue<Integer> q = new ArrayDeque<>();
-        int j = 0;
-        int count = 0;
+        int[] cnt = new int[2];
 
-        for(int i = 0; i < students.length; i++){
-            q.offer(students[i]);
+        for (int i = 0; i < students.length; i++) {
+            cnt[students[i]]++;
         }
 
-        while(j < sandwiches.length && !q.isEmpty()){
-
-            if(q.peek() != sandwiches[j]){
-                int x = q.poll();
-                q.offer(x);
-                count++;
-
-                if(count == q.size()){
-                    break;
-                }
+        for (int i = 0; i < sandwiches.length; i++) {
+            if (cnt[sandwiches[i]] == 0) {
+                break;
             }
-            else{
-                q.poll();
-                j++;
-                count = 0;
-            }
+            cnt[sandwiches[i]]--;
         }
 
-        return q.size();
+        return cnt[0] + cnt[1];
     }
 }
