@@ -25,10 +25,6 @@ class Solution {
             }
         }
 
-        if(stack1.isEmpty() && stack2.isEmpty()){
-            return true;
-        }
-
         if(stack1.size()!=stack2.size()){
             return false;
         }
