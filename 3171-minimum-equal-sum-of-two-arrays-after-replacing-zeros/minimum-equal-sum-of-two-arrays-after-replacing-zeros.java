@@ -12,16 +12,16 @@ class Solution {
             if(nums1[i]==0){
                 count1++;
             }
-            msum1 = sum1 + count1;
         }
+        msum1 = sum1 + count1;
 
         for(int i = 0; i<nums2.length; i++){
             sum2 += nums2[i];
             if(nums2[i]==0){
                 count2++;
             }
-            msum2 = sum2 + count2;
         }
+        msum2 = sum2 + count2;
         
         if(msum1 == msum2){
             return msum1;
