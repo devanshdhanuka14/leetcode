@@ -1,5 +1,18 @@
 class Solution {
     public int minRange(int a, int b, int c) {
+        int[] nums = {a, b, c};
+        Arrays.sort(nums);
+
+        if((nums[0]+nums[1]<nums[2])){
+            nums[2]=nums[0]+nums[1];
+        }
+        
+        return nums[2]-nums[0];
+    }
+}
+
+/*class Solution {
+    public int minRange(int a, int b, int c) {
         int max = 0;
         int mid = 0;
         int min = 0;
@@ -47,4 +60,4 @@ class Solution {
 
         return max - min;
     }
-}
+}*/
